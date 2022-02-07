@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Reset CSS*/
+*{margin:0; padding:0; border:0; vertical-align:top;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+ul, ol, dl {list-style:none;}
+img, video {max-width:100%;}
+a {text-decoration:none; color:#000;}
+table {border-collapse:collapse; border-spacing:0;}
+input, select {vertical-align:middle;}
+body, p {font-family:'Malgun Gothic', '맑은 고딕', sans-serif; font-size:100%; color:#767676; line-height:1; }
+body, p, div, ul, li, a, span, h1, h2, h3, h4, h5, h6, b, td, th{font-family:'Malgun Gothic', '맑은 고딕', sans-serif !important;}
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+p, li, a{color:#767676;}
+label {cursor:pointer;}
+.blind, legend, hr, caption {display:block; overflow:hidden; position:absolute; top:0; left:-1000em;}
+i, em, address {font-style:normal; font-weight:normal;}
+.eng {font-family:'Verdana', 'Arial', sans-serif;}
+strong { font-weight:normal; }
+/* a:focus{border:2px solid #ffe400; background:#ffe400; display:inline-block;}*/

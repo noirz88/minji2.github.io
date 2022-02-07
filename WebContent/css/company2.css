@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* 공통 스타일 */
+
+ul.tabMenu li.mr0 { margin-right: 0; }
+h3.tit_square { margin-left: 0; }
+h3.tit_square { margin-bottom:15px; }
+
+
+/* 니콘 소개 */
+
+@media screen and (min-width: 769px) {
+	#nikon_imaging ul.tabMenu li { width: 22%; }
+}
+
+#nikon_imaging th { width: 20%; }
+#nikon_imaging td { width: 80%; }
+
+div#tabs { width:100%; height:30px; margin-bottom: 25px; background:url('/img/bg_tab.gif') repeat-x 0 100%; text-align: right; font-size: 13px; }
+div#tabs ul, div#tabs ul li { margin:0; padding:0; }
+div#tabs ul li { display:inline-block; list-style:none; line-height:18px; }
+div#tabs ul li, div#tabs ul li a { background:url('/img/bg_tab_off.gif') no-repeat; }
+div#tabs ul li a { display:inline-block; padding:5px 40px 7px; background-position:100% 0; text-decoration:none !important; }
+div#tabs ul li.on, div#tabs ul li.on a { background:url('/img/bg_tab_on.gif'); color:#d4aa00; }
+div#tabs ul li.on a {background-position:100% 0; }
+
+.tab_body p { padding-bottom: 0.8em; font-size: 13px; line-height: 1.4; }
+.tab_body p .strong { float: left; margin-top: -0.2em; margin-right: 0.3em; color: #333; font-size: 28px; font-weight: bold; letter-spacing: -0.08em; }
+#nikon_intro .company_img {/* padding: 30px 20px 15px; background: url(/img/company/nikon_concept_bg.jpg) top center no-repeat;*/padding:0; text-align: center;margin-bottom:20px; }
+#nikon_intro .company_txt { margin-bottom: 20px; }
+#nikon_intro .company_txt table { margin-top: 10px; }
+
+table.tbl_vertical tr th, table.tbl_vertical tr td { word-break: break-all; word-wrap: break-word; }
+
+#nikon_intro h3 .print { float: right; display: inline-block; margin-top: -6px; padding: 5px 20px 7px; border: 2px solid #ffcd00; color: #d4a500; font-size: 13px; border-radius: 30px; }
+#nikon_intro h3 .print:hover, #nikon_intro h3 .print:focus { background-color: #ffcd00; color: #000; }
+#nikon_intro .map_wrap { clear: both; height: 480px; margin-bottom: 20px; border: 1px solid #c8c8c8; background-color: #eee; text-align: center; }
+#nikon_intro .map_wrap img { display: block; margin: 0 auto; }
+
+#map_view{width:100%; height:100%; position:relative; padding-top:40px;}
+#map_view h2 {font-size:18px; height:40px; color:white; background:#FBDB00 url('/img/bg_tit_popup.gif') no-repeat 0 center; vertical-align:middle; position: absolute; width:100%; top:0; left:0;}
+#map_view h2 span { display:inline-block; padding:10px 0 0 10px; font-weight:bold; text-shadow:1px 1px #EBBC00; }
+.map_view_layer_popup { position:fixed; width: 90%; height: 80%; min-width: 320px; max-width: 600px; margin: auto; left: 0; right: 0; top: 0; bottom: 0; background-color: #fff; box-shadow: 1px 1px 3px #999; z-index: 1000; }
+.map_view_layer_popup .layer_popup_close_btn{ position: absolute; width: 26px; height: 26px; top: 7px; right: 8px; }
+.map_view_layer_popup .map_view_cont { overflow: auto; padding: 2%; height: 88%; }
+.map_view_layer_popup .map_view_cont table { font-size: 12px; line-height: 120%; }
+.map_view_layer_popup .map_view_cont table th { width: 25%; }
+.map_view_layer_popup .map_view_cont .btns a { display:inline-block; font-size:13px; padding:5px 20px 7px; border-radius:30px; }
+.map_view_layer_popup .map_view_cont .btns a.print{ border:2px solid #FFCD00; color:#d4a500; }
+.map_view_layer_popup .map_view_cont .btns a.print:hover{background:#FFCD00; border:2px solid #FFCD00; color:#000;}
+.map_view_layer_popup .map_view_cont .btns a.close{ border:2px solid #A5A5A5; color:#888; }
+.map_view_layer_popup .map_view_cont .btns a.close:hover{background:#A5A5A5; border:2px solid #A5A5A5; color:#FFF;}
+.map_view_layer_popup .map_wrap { height: 480px; margin-bottom: 20px; }
+
+@media screen and (max-width:768px) {
+	#nikon_intro h3 .print{display:none;}
+}
+
+@media screen and (max-width:640px) {
+	.map_view_layer_popup .map_wrap { height: 400px; }
+}
+
+@media print{
+	header, #location, #contents, footer{display:none;}
+	#map_view .map_view_cont {overflow: visible;}
+	.map_view_layer_popup{max-width:100%; min-width: 100%; width:100%; height:90%; position:relative; margin:auto; top:auto; left:auto; right:auto;  bottom:auto;  }
+}
+
+#nikon_history .history_list { position: relative; height: 48px; border-top: 1px solid #d1c891; border-bottom: 1px solid #d1c891; background-color: #faf8ea; }
+#nikon_history .history_list .btn_arrow { position: absolute; display: block; width: 36px; top: 0; bottom: 0; background-color: #e7be00; color: #fff; font-weight: bold; text-align: center; line-height: 48px; }
+#nikon_history .history_list .btn_arrow img { vertical-align: middle; }
+#nikon_history .history_list .btn_arrow.prev { left: 0; }
+#nikon_history .history_list .btn_arrow.next { right: 0; }
+#nikon_history .history_list .list_year { overflow: hidden; margin: 0 36px; }
+#nikon_history .history_list .list_year ul { position: relative; width: 220%; /* 1줄 5개 표시 : 20%*11개(년도) */ }
+#nikon_history .history_list .list_year li { float: left; width: 9%; /* 총 11개 */ font-family: 'Tahoma', sans-serif; font-size: 18px; text-align: center; }
+#nikon_history .history_list .list_year li + li { background: url(/img/company/bar_history_list.gif) left center no-repeat; }
+#nikon_history .history_list .list_year li span { display: block; padding: 0 10px; }
+#nikon_history .history_list .list_year li a { display: block; padding-top: 4px; padding-bottom: 4px; color: #d2be70; text-align: center; line-height: 40px; }
+#nikon_history .history_list .list_year li a:hover { padding-bottom: 0px; border-bottom: 4px solid #ffd800; color: #7d6700; }
+#nikon_history .history_list .list_year li.on a { padding-bottom: 0px; border-bottom: 4px solid #ffd800; color: #7d6700; font-weight: bold; }
+
+#nikon_history .history_cont { clear: both; }
+#nikon_history .history_cont .img_year { position: relative; float: left; margin-top: -20px; margin-bottom: 30px; }
+#nikon_history .history_cont .img_year span { position: absolute; top: 50%; bottom: 0; left: 0; right: 0; margin: auto; margin-top: -0.5em; color: #7d6700; font-size: 48px; text-align: center; line-height: 1; }
+#nikon_history .history_cont .img_year.period span { margin-top: -1em; }
+#nikon_history .history_cont .img_year img { display: block; margin: 0 auto; }
+#nikon_history .history_cont .list_month { margin-left: 280px; margin-top: 50px; }
+#nikon_history .history_cont .list_month dl { padding: 18px 20px 8px; border-top: 1px solid #cdcdcd; }
+#nikon_history .history_cont .list_month dt { float: left; color: #ac9020; font-family: 'Tahoma', sans-serif; font-size: 18px; letter-spacing: -0.05em; }
+#nikon_history .history_cont .list_month dd { margin-left: 90px; margin-bottom: 8px; padding-left: 10px; background: url(/img/company/icn_circle_yl.gif) left 6px no-repeat; line-height: 1.4; }
+
+#nikon_group > ul { clear: both; overflow: hidden; margin-bottom: 20px; padding-bottom: 2%; border-bottom: 1px solid #cdcdcd; }
+#nikon_group > ul .group_img { float: left; width: 270px; }
+#nikon_group > ul .group_txt { padding-left: 270px; }
+#nikon_group > ul .group_txt .link { float: right; display: inline-block; padding: 8px 16px; background: #555; color: #fff; border-radius: 5px; border-bottom: 1px solid black; }
+#nikon_group > ul .group_txt .link img { vertical-align: baseline; }
+
+
+@media screen and (max-width:700px) {
+	.tab_body #nikon_intro .company_img { margin-bottom: 10px; background-size: cover; }
+}
+
+@media screen and (max-width:768px) {
+	div#tabs { text-align: center; } 
+}
+
+@media screen and (min-width:1001px) {
+	#nikon_history .history_cont .list_month { padding-left: 60px; }
+}
+
+@media screen and (min-width:769px) and (max-width:1000px) {
+	#nikon_history .history_cont .list_month { padding-left: 40px; }
+}
+
+@media screen and (min-width:641px) and (max-width:768px) {
+	#nikon_history .history_cont .list_month { padding-left: 30px; }
+}
+
+@media screen and (max-width:640px) {
+	#nikon_imaging th { width: 60px; }
+	#nikon_imaging td { width: auto; }
+
+	div#tabs { margin-bottom: 15px; } 
+	
+	.tab_body p .strong { margin-top: 0; font-size: 21px; }
+	#nikon_intro .company_img { padding: 15px 2% 5px; }
+	#nikon_intro .company_txt table { margin-top: 0; }
+
+	#nikon_intro .map_wrap { height: 240px; margin-bottom: 10px; }
+	
+	#nikon_history .history_list { height: 32px; overflow: hidden; }
+	#nikon_history .history_list .btn_arrow { width: 28px; line-height: inherit; }
+	#nikon_history .history_list .btn_arrow img { padding: 7px 0; }
+	#nikon_history .history_list .list_year { margin: 0 28px; }
+	#nikon_history .history_list .list_year li { font-size: 15px; }
+	#nikon_history .history_list .list_year li a { line-height: 24px; }
+	#nikon_history .history_cont .img_year { clear: both; float: none; width: 50%; margin: 15px auto; }
+	#nikon_history .history_cont .img_year span { font-size: 28px; }
+	#nikon_history .history_cont .list_month { margin-left: 0; margin-top: 0; }
+	#nikon_history .history_cont .list_month dl { padding: 10px 8px 6px; }
+	#nikon_history .history_cont .list_month dt { font-size: 15px; }
+	#nikon_history .history_cont .list_month dd { margin-left: 70px; margin-bottom: 4px; }
+
+	#nikon_group > ul .group_img { float: none; clear: both; width: auto; text-align: center; }
+	#nikon_group > ul .group_txt { padding-left: 0; }
+}
+
+@media screen and (max-width:360px) {
+	#nikon_history .history_list .list_year li { font-size: 14px; }
+}
